@@ -1,10 +1,48 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>My GitHub Page</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>External Upsell</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin-top: 50px;
+        }
+        button {
+            padding: 10px 20px;
+            margin: 10px;
+            font-size: 16px;
+            cursor: pointer;
+            border: none;
+            border-radius: 5px;
+        }
+        #accept {
+            background-color: #4CAF50;
+            color: white;
+        }
+        #reject {
+            background-color: #f44336;
+            color: white;
+        }
+    </style>
 </head>
 <body>
-    <h1>Welcome to QA External Upsell</h1>
-    <p>This website is hosted entirely on GitHub.</p>
+
+    <h1>Do you accept or reject?</h1>
+    <button id="accept">Accept</button>
+    <button id="reject">Reject</button>
+
+    <script>
+        document.getElementById("accept").addEventListener("click", function() {
+            alert("You clicked Accept!");
+        });
+
+        document.getElementById("reject").addEventListener("click", function() {
+            alert("You clicked Reject!");
+        });
+    </script>
+
 </body>
 </html>
