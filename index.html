@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>External Upsell</title>
+    <title>Accept / Reject Buttons</title>
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -26,22 +26,26 @@
             background-color: #f44336;
             color: white;
         }
+        button:hover {
+            opacity: 0.8;
+        }
     </style>
 </head>
 <body>
- <h1>External Upsell Testing QA </h1>
-    <br>    <br>    <br>
+
     <h1>Do you accept or reject?</h1>
     <button id="accept">Accept</button>
     <button id="reject">Reject</button>
 
     <script>
+        // Redirect when Accept is clicked
         document.getElementById("accept").addEventListener("click", function() {
-            alert("You clicked Accept!");
+            window.location.href = "https://arsalan-prod-shop.release.mycartpanda.com/ex-ocu/next-offer/1qjoGAojJD?accepted=yes";
         });
 
+        // Redirect when Reject is clicked
         document.getElementById("reject").addEventListener("click", function() {
-            alert("You clicked Reject!");
+            window.location.href = "https://arsalan-prod-shop.release.mycartpanda.com/ex-ocu/next-offer/1qjoGAojJD?accepted=no";
         });
     </script>
 
